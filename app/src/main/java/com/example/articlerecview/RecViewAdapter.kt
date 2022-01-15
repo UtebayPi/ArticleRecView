@@ -18,7 +18,7 @@ class RecViewAdapter: RecyclerView.Adapter<RecViewAdapter.ViewHolder>() {
         //TextViews from person_list_item.
         private val textName: TextView = itemView.findViewById(R.id.textName)
         private var textAge: TextView = itemView.findViewById(R.id.textAge)
-        //this method is used in other place, it binds data from "people" array,
+        //this method is used in  other place, it binds data from "people" array,
         //to Views inside every person_list_item, displayed in RecyclerView.
         fun bind(person: Person){
             textName.text = person.name
