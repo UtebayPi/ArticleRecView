@@ -29,6 +29,7 @@ class RecViewAdapter: RecyclerView.Adapter<RecViewAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.person_list_item, parent, false)
         return ViewHolder(view)
+
     }
     //this method accepts and gives us ViewHolder object(class that we wrote before) connected to every person_list_item in RecyclerView,
     // and also it's position in RecyclerView. Using position, we give every person_list_item, it's own individual Person from people array,
